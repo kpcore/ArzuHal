@@ -1,0 +1,26 @@
+<h1>Welcome to Arzuhal</h1>
+
+<%= link_to 'User Management', users_path %> |
+<%= link_to 'Home', root_path %>
+
+<thead>
+<tr>
+  <br><hr/><b>
+  <th>Name</th>
+  <th>Surname</th>
+  <th>Email</th>
+  <th>Bio</th>
+  <th colspan="5"></th></b>
+</tr>
+</thead>
+
+<% @users.each do |user| %>
+
+<tr>
+  <br>
+  <td><%= user.name %></td>
+  <td><%= user.surname %></td>
+  <td><%= user.email %></td>
+  <td><%= user.bio %></td>
+</tr>
+    <%end%>
