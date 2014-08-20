@@ -1,0 +1,11 @@
+
+<p>
+  <strong>Twit:</strong>
+  <%= twit.content %>
+</p>
+
+<p>
+  <%= link_to 'Destroy Twit', [twit.user, twit],
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+</p>
